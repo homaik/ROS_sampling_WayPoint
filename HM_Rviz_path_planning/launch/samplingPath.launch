@@ -1,0 +1,16 @@
+<launch>
+  <!-- Arguments -->
+
+  <!-- visualization in Rviz -->
+  <node pkg="HM_Rviz_path_planning" name="test4_node" type="test4_node"/>
+
+  <!-- Run the sampling Action -->
+  <node pkg="HM_Rviz_path_planning" name="samplingAction" type="samplingAction"/>
+	
+  <!-- Run the sampling Action client -->
+  <node pkg="HM_Rviz_path_planning" name="samplingAction_client" type="samplingAction_client"/>
+
+  <!-- Run the sampling Service -->
+  <node pkg="HM_Rviz_path_planning" name="samplingService" type="sampling_server"/>
+
+</launch>
